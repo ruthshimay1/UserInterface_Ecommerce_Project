@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Habesha Apparel - my responsive website · Bootstrap v5.2</title>
+      <link rel="icon" href="images/favicon.ico">
+
+    <!-- links to jquery and mustache -->
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="mustache.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+
+    <!-- Include script, embading for fonts from google -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,600|Montserrat:300,500" rel="stylesheet">
+
+    <!-- Include script for font awesome icon library -->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- icon item -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- link to bootstrap css file -->
+
+     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+
+
+  <!--   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/footers/"> -->
+
+<!-- form validation css -->
+<link href="form-validation.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- <div style="padding-top: 40px;">
+      <h2 style="text-align:center">Checkout</h2>
+    </div> -->
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Carousel</a> -->
+      <!-- <img src = "Habesha_apparel - Copy.png" height =35> -->
+      <a class="navbar-brand" href="index.html" style="font-family: cursive">
+    <img src="images/Habesha_apparel1.png" width="30" height="30" class="d-inline-block align-top" alt="Logo Image">
+    Habesha Apparel</a>
+
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+    <!-- <body> -->
+
+    <div class="container">
+      <!-- <main> -->
+        <div class="py-5 text-center">
+          <img src="images/Habesha_apparel1.png" width="30" height="30" class="d-inline-block align-top" alt="Logo Image">
+          Habesha Apparel - Contunue to Checkout</a>
+          <!-- <img class="d-block mx-auto mb-4" src="./images/Habesha_apparel1.png" alt="" width="72" height="57"> -->
+        </div>
+
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Billing address</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                  <div class="invalid-feedback">
+                      Your username is required.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                  <div class="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                </div>
+
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Country</label>
+                  <select class="form-select" id="country" required>
+                    <option value="">Choose...</option>
+                    <option>United States</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="state" class="form-label">State</label>
+                  <select class="form-select" id="state" required>
+                    <option value="">Choose...</option>
+                    <option>California</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+              </div>
+
+              <!-- <hr class="my-4"> -->
+                <hr class="featurette-divider">
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Save this information for next time</label>
+              </div>
+  <!-- <hr class="featurette-divider"> -->
+              <hr class="my-4">
+
+              <h4 class="mb-3">Payment</h4>
+
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Credit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Debit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Name on card</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                  <small class="text-muted">Full name as displayed on card</small>
+                  <div class="invalid-feedback">
+                    Name on card is required
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Credit card number</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Credit card number is required
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label">Expiration</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Expiration date required
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Security code required
+                  </div>
+                </div>
+              </div>
+
+              <!-- <hr class="my-4"> -->
+                <hr class="featurette-divider">
+
+              <button class="my_button" type="submit">Continue to checkout</button>
+            </form>
+          </div>
+        </div>
+      <!-- </main> -->
+
+
+    </div>
+
+
+
+
+</main>
+
+<!-- Footer -->
+<div class="container footer">
+    <hr class="featurette-divider">
+ <footer class="py-5">
+   <div class="row">
+     <div class="col-6 col-md-2 mb-3">
+         <a href="index.html"> <h5> Habesha Apparel</h5> </a>
+       <ul class="nav flex-column">
+         <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+         <li class="nav-item mb-2"><a href="shop.html" class="nav-link p-0 text-muted">Shop</a></li>
+           <li class="nav-item mb-2"><a href="sizing.html" class="nav-link p-0 text-muted">Sizing</a></li>
+         <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Contact Us</a></li>
+         <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-muted">About</a></li>
+         <li class="nav-item mb-2"><a href="FAQ.html" class="nav-link p-0 text-muted">FAQ</a></li>
+       </ul>
+     </div>
+
+     <div class="col-6 col-md-2 mb-3">
+
+     </div>
+
+     <div class="col-6 col-md-2 mb-3">
+       <h5>Any Questions?</h5>
+
+       <h6>
+         <strong>+3012436788   +8667032020</strong>
+         <br />
+         IMO/WhatsApp/Telegram
+         <br />
+         info@habeshapparel.com
+       </h6>
+
+     </div>
+
+     <div class="col-md-5 offset-md-1 mb-3">
+       <form>
+         <h5>Subscribe to our newsletter</h5>
+         <p>Sign up to get the latest on sales, new releases and more</p>
+         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+           <label for="newsletter1" class="visually-hidden">Email address</label>
+           <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+           <button class="my_button" type="button">Subscribe</button>
+         </div>
+       </form>
+       <div>
+         <br />
+         <p><strong>Payment methods:</strong></p>
+         <img src="images/visa.png" alt="visa card"/>
+         <img src="images/paypal.png" alt="paypal"/>
+         <img src="images/master.png" alt="master card"/>
+       </div>
+     </div>
+   </div>
+
+   <p><a href="#" class="newanchor">Privacy</a> &middot; <a href="#" class="newanchor">Terms</a> &middot; <a href="#" class="newanchor">Questions?</a></p>
+   <p class="float-end"><a href="#" class="newanchor">Back to top</a></p>
+
+
+   <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+
+       <p>&copy; 2022 Habesha Apparel, Inc. All rights reserved.</p>
+
+       <!-- Social Media footer
+           _____________________________ -->
+
+       <!-- Facebook -->
+       <ul class="list-unstyled d-flex">
+         <li class="ms-3">
+           <a style="color: #3b5998;" href="#" role="button">
+             <i class="fab fa-facebook-f fa-lg"></i>
+
+           </a>
+         </li>
+
+       <!-- Twitter -->
+       <li class="ms-3">
+         <a style="color: #55acee;" href="#" role="button">
+           <i class="fab fa-twitter fa-lg"></i>
+         </a>
+       </li>
+
+       <!-- Google -->
+       <li class="ms-3">
+       <a style="color: #dd4b39;" href="#" role="button">
+         <i class="fab fa-google fa-lg"></i>
+       </a>
+       </li>
+
+       <!-- Instagram -->
+       <li class="ms-3">
+       <a style="color: #ac2bac;" href="#" role="button">
+         <i class="fab fa-instagram fa-lg"></i>
+       </a>
+       </li>
+       </ul>
+
+   </div>
+
+ </footer>
+  </div>
+
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="src/Data.js"></script>
+        <script src="src/main.js"></script>
+
+
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+          <script src="form-validation.js"></script>
+
+
+
+  </body>
+</html>

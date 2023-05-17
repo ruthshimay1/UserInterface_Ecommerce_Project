@@ -1,0 +1,81 @@
+let shopItemsData = [
+  {
+    id: "jfhgbvnscs1",
+    name: "Habesha Kids",
+    price: 58,
+    desc: "Traditional Habasha kids",
+    img: "images/kids_special.png",
+  },
+  {
+    id: "ioytrhndcv2",
+    name: "Habesha Kids",
+    price: 75,
+    desc: "Traditional Habasha kids",
+    img: "images/kids.png",
+  },
+  {
+    id: "wuefbncxbsn3",
+    name: "Habesha Kids",
+    price: 85,
+    desc: "Habesha Traditional Dress",
+    img:  "images/kids1.png",
+  },
+  {
+    id: "thyfhcbcv4",
+    name: "Habesha Kids",
+    price: 58,
+    desc: "Traditional Habasha kids",
+    img: "images/kids2.png",
+  },
+  {
+    id: "jfhgbvnscs5",
+    name: "Habesha Kids",
+    price: 59,
+    desc: "Traditional Habasha kids",
+    img: "images/kids3.png",
+  },
+  {
+    id: "ioytrhndcv6",
+    name: "Habesha Kids",
+    price: 35,
+    desc: "Traditional Habasha kids",
+    img: "images/kids4.png",
+  },
+  {
+    id: "wuefbncxbsn7",
+    name: "Habesha Kids",
+    price: 68,
+    desc: "Traditional Habasha kids",
+    img: "images/kids5.png",
+  },
+  {
+    id: "thyfhcbcv8",
+    name: "Habesha Kids",
+    price: 58,
+    desc: "Traditional Habasha kids",
+    img: "images/kids6.png",
+  },
+
+  {
+    id: "jfhgbvnscs9",
+    name: "Habesha Kids",
+    price: 48,
+    desc: "Summer Habesha Dress",
+    img: "images/kids7.png",
+  },
+  {
+    id: "ioytrhndcv10",
+    name: "Habesha Kids",
+    price: 98,
+    desc: "Traditional Habasha kids",
+    img: "images/kids8.png",
+  },
+  {
+    id: "wuefbncxbsn11",
+    name: "Habesha Kids",
+    price: 58,
+    desc: "Traditional Habesha Casual Top",
+    img: "images/kids9.png",
+  },
+  
+];

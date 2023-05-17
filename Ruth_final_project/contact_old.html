@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Habesha Apparel - my responsive website · Bootstrap v5.2</title>
+
+    <!-- links to jquery and mustache -->
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="mustache.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+
+    <!-- Include script, embading for fonts from google -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,600|Montserrat:300,500" rel="stylesheet">
+
+    <!-- Include script for font awesome icon library -->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- icon item -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- link to bootstrap css file -->
+
+     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+
+
+    <!-- sighup form style -->
+      <link href="style.css" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+      <div style="padding-top: 40px;">
+        <h2 style="text-align:center">Contact Us</h2>
+      </div>
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style= "color:white;">
+    <!-- <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #d8a48e;"> -->
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Carousel</a> -->
+      <!-- <img src = "Habesha_apparel - Copy.png" height =35> -->
+      <a class="navbar-brand" href="index.html" style="font-family: cursive">
+        <img src="images/Habesha_apparel1.png" width="30" height="30" class="d-inline-block align-top" alt="Logo Image">
+        Habesha Apparel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <!-- drop down begins here -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="women.html #Women Apparel">Women</a></li>
+                <li><a class="dropdown-item" href="men.html">Men</a></li>
+                <li><a class="dropdown-item" href="kids.html">Kids</a></li>
+                  <li><a class="dropdown-item" href="jewelleries.html">Jewelleries</a></li>
+                <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+                <!-- <li><a class="dropdown-item" href="index.html#women">New Arrivals</a></li> -->
+              </ul>
+            </li>
+            <!-- drop down ends here -->
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="sizing.html">Sizing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ia-current="page" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="FAQ.html">FAQ</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            <button class="btn btn-primary" onMouseOver="this.style.color='#0F0'"
+             onMouseOut="this.style.color='#FFFFFF'" style="background:#213737; border: none; type="button">Search</button>
+          </form>
+
+          <!-- right nav items -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+
+              <a class="nav-link" href="signup.html" style="color:white;">Login</a>
+            </li>
+        </ul>
+
+        <ul style="list-style: none; margin-bottom: 0px;">
+          <li class="nav-item">
+            <a href="cart.html">
+              <div class="cart">
+                <i class="cart bi bi-cart2"></i>
+                <div id="cartAmount" class="cartAmount">0</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+</div>
+</div>
+</nav>
+</header>
+
+<main style="margin:auto 83px;">
+
+  <div id="contact" class="form-1 bg-gray">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Contact Form -->
+
+                <form class="form" id="contact-form" method="post" style=" width: 50vw; margin-left : 25vw;">
+                    <h3>First Name<span style="color: #1ab188;">*</span>:</h3>
+                    <input type="text" style="height:55px;" id="name-input" placeholder="First Name" class="form-control" style="width:100%;" /><br/>
+
+                    <h3>Last Name<span style="color: #1ab188;">*</span>:</h3>
+                    <input type="text" style="height:55px;" id="name-input" placeholder="Last Name" class="form-control" style="width:100%;" /><br/>
+
+
+                    <h3>Email<span style="color: #1ab188;">*</span>:</h3>
+                    <input type="email" style="height:55px;" id="email-input" placeholder="Email Adress..." class="form-control" style="width:100%;"/><br/>
+                    <h3>Message</h3>
+                    <textarea id="description-input" rows="10" placeholder="Message..." class="form-control" style="width:100%;"></textarea><br/>
+                    <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
+                    <button type="button" onClick="submitToAPI(event)" class="my_button" style="margin-top:20px;">submit</button>
+                </form>
+
+            </div>
+                <!-- end of contact form -->
+            </div>
+                <!-- end of contact form -->
+
+    </div> <!-- end of container -->
+  </div> <!-- end of form-1 -->
+  <!-- end of contact -->
+
+
+
+
+  <hr class="featurette-divider">
+
+</main>
+
+<!-- Footer -->
+<div class="container footer">
+ <footer class="py-5">
+   <div class="row">
+     <div class="col-6 col-md-2 mb-3">
+         <a href="index.html"> <h5> Habesha Apparel</h5> </a>
+       <ul class="nav flex-column">
+         <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+         <li class="nav-item mb-2"><a href="shop.html" class="nav-link p-0 text-muted">Shop</a></li>
+           <li class="nav-item mb-2"><a href="sizing.html" class="nav-link p-0 text-muted">Sizing</a></li>
+         <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Contact Us</a></li>
+         <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-muted">About</a></li>
+         <li class="nav-item mb-2"><a href="FAQ.html" class="nav-link p-0 text-muted">FAQ</a></li>
+       </ul>
+     </div>
+
+     <div class="col-6 col-md-2 mb-3">
+
+     </div>
+
+     <div class="col-6 col-md-2 mb-3">
+       <h5>Any Questions?</h5>
+
+       <h6>
+         <strong>+3012436788   +8667032020</strong>
+         <br />
+         IMO/WhatsApp/Telegram
+         <br />
+         info@habeshapparel.com
+       </h6>
+
+     </div>
+
+     <div class="col-md-5 offset-md-1 mb-3">
+       <form>
+         <h5>Subscribe to our newsletter</h5>
+         <p>Sign up to get the latest on sales, new releases and more</p>
+         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+           <label for="newsletter1" class="visually-hidden">Email address</label>
+           <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+           <button class="my_button" type="button">Subscribe</button>
+         </div>
+       </form>
+       <div>
+         <br />
+         <p><strong>Payment methods:</strong></p>
+         <img src="images/visa.png" alt="visa card"/>
+         <img src="images/paypal.png" alt="paypal"/>
+         <img src="images/master.png" alt="master card"/>
+       </div>
+     </div>
+   </div>
+
+   <p><a href="#" class="newanchor">Privacy</a> &middot; <a href="#" class="newanchor">Terms</a> &middot; <a href="#" class="newanchor">Questions?</a></p>
+   <p class="float-end"><a href="#" class="newanchor">Back to top</a></p>
+
+   <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+
+       <p>&copy; 2022 Habesha Apparel, Inc. All rights reserved.</p>
+
+       <!-- Social Media footer
+           _____________________________ -->
+
+       <!-- Facebook -->
+       <ul class="list-unstyled d-flex">
+         <li class="ms-3">
+           <a style="color: #3b5998;" href="#" role="button">
+             <i class="fab fa-facebook-f fa-lg"></i>
+
+           </a>
+         </li>
+
+       <!-- Twitter -->
+       <li class="ms-3">
+         <a style="color: #55acee;" href="#" role="button">
+           <i class="fab fa-twitter fa-lg"></i>
+         </a>
+       </li>
+
+       <!-- Google -->
+       <li class="ms-3">
+       <a style="color: #dd4b39;" href="#" role="button">
+         <i class="fab fa-google fa-lg"></i>
+       </a>
+       </li>
+
+       <!-- Instagram -->
+       <li class="ms-3">
+       <a style="color: #ac2bac;" href="#" role="button">
+         <i class="fab fa-instagram fa-lg"></i>
+       </a>
+       </li>
+       </ul>
+
+   </div>
+
+ </footer>
+  </div>
+
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="src/Data.js"></script>
+        <script src="src/main.js"></script>
+
+  </body>
+</html>
